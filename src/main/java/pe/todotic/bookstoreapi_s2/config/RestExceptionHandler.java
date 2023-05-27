@@ -26,7 +26,7 @@ import java.util.Locale;
 public class RestExceptionHandler {
 
     @Autowired
-    private MessageSource messageSource;
+    private Messag@eSource messageSource;
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     ProblemDetail handleValidationError (MethodArgumentNotValidException manve){
@@ -59,4 +59,6 @@ public class RestExceptionHandler {
         problemDetail.setDetail("El email ingresado ya se encuentra registrado");
         return  problemDetail;
     }
+
+    //HOLA MUNDOOOOOOOOOO
 }
